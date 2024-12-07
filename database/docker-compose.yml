@@ -1,0 +1,17 @@
+---
+services:
+  database:
+    tty: true
+    image: postgres:17.2
+    ports:
+      - 5432:5432
+    environment:
+      USER_PASSWORD: "iamtheuser"
+      POSTGRES_PASSWORD: "iamtheroot"
+    volumes:
+      - ./db-init/init.sh:/docker-entrypoint-initdb.d/init.sh
+
+      - dbdata:/var/lib/postgresql/data
+
+volumes:
+  dbdata:
