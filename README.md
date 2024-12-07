@@ -13,7 +13,7 @@ container engine installed.
 Clone this repository with:
 
 ```bash
-git clone TODO
+git clone git@github.com:BeautifulTovarisch/jupyter-jamboree.git
 ```
 
 ## Modules
